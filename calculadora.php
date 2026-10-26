@@ -48,6 +48,7 @@ echo "================\n";
 
 $opcao = readline("Escolha uma Opção: ");
 
+//Executar a opção de Escolha
 switch ($opcao) {
     case "1":
         $resultado = somar($numero1, $numero2);
@@ -71,21 +72,3 @@ switch ($opcao) {
         echo "Opcão Invalida\n";
         break;
         }
-
-
-
-
-// // Função utilitária para exibir o resultado
-// function ExibirResultado ($resultado) {
-//     return "Resultado" . $resultado;
-// }
-
-
-// // Teste dos Resultados
-// echo exibirResultado( somar ( 10, 5) ) . "\n";
-// echo exibirResultado( subtrair ( 10, 5) ) . "\n";
-// echo exibirResultado( multiplicar ( 10, 5) ) . "\n";
-// echo exibirResultado( dividir ( 10, 5) ) . "\n";
-
-// // Testando a validação da divisão por zero
-// echo dividir(10, 0) . "\n";
