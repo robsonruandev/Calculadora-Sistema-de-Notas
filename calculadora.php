@@ -49,24 +49,24 @@ echo "================\n";
 $opcao = readline("Escolha uma Opção: ");
 
 //Executar a opção de Escolha
+
 switch ($opcao) {
     case "1":
         $resultado = somar($numero1, $numero2);
-        echo exibirResultado($resultado) . PHP_EOL;
+        echo exibirResultado($resultado);
         break;
     case "2":
         $resultado = subtrair($numero1, $numero2);
-        echo exibirResultado($resultado) . PHP_EOL;
+        echo exibirResultado($resultado);
         break;
     case "3":
         $resultado = multiplicar($numero1, $numero2);
-        echo exibirResultado($resultado) . PHP_EOL;
+        echo exibirResultado($resultado);
         break;
     case "4":
         $resultado = dividir($numero1, $numero2);
-        echo exibirResultado($resultado) . PHP_EOL;
+        echo exibirResultado($resultado);
         break;
-
 
     default:
         echo "Opcão Invalida\n";
