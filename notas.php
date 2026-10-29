@@ -7,10 +7,7 @@ const MEDIA_RECUPERACAO = 6;
 const MEDIA_PRESENCA = 75;
 const MEDIA_PRESENCAr = 65;
 
-
-// //Array para armazenar alunos e notas
-// $alunos = [];
-
+//Função para Avaliar a situação do aluno
 function status($media, $presenca) {
     if ($media >= MEDIA_APROVACAO && $presenca >= MEDIA_PRESENCA) {
         return "Aprovado";
@@ -21,8 +18,8 @@ function status($media, $presenca) {
     }
 }
 
-
 //Solicitar a quantidade de alunos
+
 $quantidade = (int) readline("Quantos alunos deseja cadastrar? ");
 
 for ($i = 0; $i < $quantidade; $i++) {
@@ -38,7 +35,7 @@ for ($i = 0; $i < $quantidade; $i++) {
     $media = ($nota1 + $nota2) /2;
 
     //Armazenar dados no Array
-    $aluno[] = [
+    $alunos[] = [
         'nome' => $nome,
         'nota1'=> $nota1,
         'nota2'=> $nota2,
@@ -48,7 +45,7 @@ for ($i = 0; $i < $quantidade; $i++) {
     ];
 }
 
-foreach ($aluno as $aluno) {
+foreach ($alunos as $aluno) {
 echo '==== RESULTADO NOTAS ===='. PHP_EOL;
 echo 'Aluno: ' . $aluno['nome'] . PHP_EOL;
 echo 'Nota1: '. $aluno['nota1'] . PHP_EOL;
