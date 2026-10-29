@@ -21,13 +21,6 @@ function status($media, $presenca) {
     }
 }
 
-// function classificar($presenca) {
-//     if ($presenca >= MEDIA_PRESENCA) {
-//         return "Aprovado";
-//     } else {
-//         return "Reprovado";
-//     }
-// }
 
 //Solicitar a quantidade de alunos
 $quantidade = (int) readline("Quantos alunos deseja cadastrar? ");
